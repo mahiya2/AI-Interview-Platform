@@ -1,0 +1,388 @@
+/* ================================
+   CODING QUESTIONS PAGE
+================================ */
+
+.coding-page {
+  min-height: 100vh;
+  background: #f7f7fc;
+  padding: 40px 50px 60px;
+  box-sizing: border-box;
+}
+
+/* ================================
+   HEADER
+================================ */
+
+.coding-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 32px;
+}
+
+.coding-label {
+  margin: 0 0 12px;
+  color: #6338e8;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.coding-header h1 {
+  margin: 0;
+  color: #11184b;
+  font-size: 38px;
+  font-weight: 750;
+}
+
+.coding-header > div:first-child > p:last-child {
+  margin-top: 12px;
+  color: #747896;
+  font-size: 17px;
+}
+
+/* ================================
+   PROBLEM COUNT
+================================ */
+
+.coding-count {
+  min-width: 120px;
+  padding: 18px 24px;
+  background: white;
+  border: 1px solid #e8e5f3;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(50, 35, 100, 0.04);
+}
+
+.coding-count span {
+  display: block;
+  color: #5d35df;
+  font-size: 30px;
+  font-weight: 750;
+}
+
+.coding-count small {
+  display: block;
+  margin-top: 3px;
+  color: #777b98;
+  font-size: 13px;
+}
+
+/* ================================
+   DIFFICULTY FILTERS
+================================ */
+
+.difficulty-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.difficulty-filters button {
+  padding: 10px 22px;
+  border: 1px solid #ddd8ef;
+  border-radius: 10px;
+  background: white;
+  color: #505577;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.difficulty-filters button:hover {
+  border-color: #6b3ce5;
+  color: #6036dc;
+  transform: translateY(-1px);
+}
+
+.difficulty-filters .filter-active {
+  background: #6338e8;
+  border-color: #6338e8;
+  color: white;
+  box-shadow: 0 5px 12px rgba(99, 56, 232, 0.2);
+}
+
+/* ================================
+   CODING GRID
+================================ */
+
+.coding-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+/* ================================
+   CODING CARD
+================================ */
+
+.coding-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 390px;
+  padding: 26px;
+  background: white;
+  border: 1px solid #e8e5f3;
+  border-radius: 18px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 20px rgba(43, 32, 91, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.coding-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(65, 42, 130, 0.10);
+}
+
+/* ================================
+   CARD TOP
+================================ */
+
+.coding-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.coding-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #eee8ff;
+  color: #6338e8;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* ================================
+   DIFFICULTY BADGES
+================================ */
+
+.difficulty-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.difficulty-badge.easy {
+  background: #e8f8ee;
+  color: #159447;
+}
+
+.difficulty-badge.medium {
+  background: #fff3df;
+  color: #d98500;
+}
+
+.difficulty-badge.hard {
+  background: #ffe8e8;
+  color: #d43c3c;
+}
+
+/* ================================
+   TITLE
+================================ */
+
+.coding-card h2 {
+  margin: 0 0 12px;
+  color: #151b4d;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+/* ================================
+   DESCRIPTION
+================================ */
+
+.coding-description {
+  margin: 0;
+  color: #707593;
+  font-size: 14px;
+  line-height: 1.7;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ================================
+   CONSTRAINTS
+================================ */
+
+.constraints-preview {
+  margin-top: 18px;
+  padding: 12px 14px;
+  background: #f7f5fc;
+  border-radius: 10px;
+}
+
+.constraints-preview strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #343960;
+  font-size: 12px;
+}
+
+.constraints-preview p {
+  margin: 0;
+  color: #777b98;
+  font-size: 12px;
+  line-height: 1.5;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ================================
+   SOLVE BUTTON
+================================ */
+
+.solve-button {
+  width: 100%;
+  margin-top: auto;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #6338e8;
+  color: white;
+  font-size: 14px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.solve-button:hover {
+  background: #5128d0;
+  transform: translateY(-1px);
+}
+
+/* ================================
+   EMPTY STATE
+================================ */
+
+.empty-coding {
+  padding: 60px 20px;
+  background: white;
+  border: 1px solid #e8e5f3;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.empty-coding h3 {
+  margin-bottom: 8px;
+  color: #171d4e;
+}
+
+.empty-coding p {
+  color: #777b98;
+}
+
+/* ================================
+   LOADING
+================================ */
+
+.coding-loading {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6338e8;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* ================================
+   ERROR
+================================ */
+
+.coding-error {
+  padding: 20px;
+  background: #fff0f0;
+  border: 1px solid #ffd2d2;
+  border-radius: 12px;
+  color: #c73838;
+  text-align: center;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1100px) {
+  .coding-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .coding-page {
+    padding: 35px 30px 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .coding-page {
+    padding: 25px 18px 40px;
+  }
+
+  .coding-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .coding-header h1 {
+    font-size: 30px;
+  }
+
+  .coding-count {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .difficulty-filters {
+    flex-wrap: wrap;
+  }
+
+  .coding-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.coding-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: stretch;
+  min-height: 720px;
+}
+
+/* Left problem panel */
+.problem-panel {
+  height: 720px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #e7e4f2;
+  border-radius: 18px;
+  padding: 28px;
+  box-sizing: border-box;
+}
+
+/* Right editor panel */
+.editor-panel {
+  height: 720px;
+  background: white;
+  border: 1px solid #e7e4f2;
+  border-radius: 18px;
+  padding: 28px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}

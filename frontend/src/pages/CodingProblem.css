@@ -1,0 +1,460 @@
+/* =================================
+   CODING PROBLEM PAGE
+================================= */
+
+.coding-problem-page {
+  min-height: 100vh;
+  background: #f7f7fc;
+  padding: 30px 40px 50px;
+  box-sizing: border-box;
+}
+
+/* =================================
+   BACK BUTTON
+================================= */
+
+.back-to-coding {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #6338e8;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.back-to-coding:hover {
+  text-decoration: underline;
+}
+
+/* =================================
+   MAIN TWO COLUMN LAYOUT
+================================= */
+
+.coding-workspace {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 1500px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+/* =================================
+   LEFT PROBLEM PANEL
+================================= */
+
+.problem-panel {
+  height: 720px;
+  overflow-y: auto;
+
+  background: #ffffff;
+
+  border: 1px solid #e7e4f2;
+  border-radius: 18px;
+
+  padding: 28px;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 5px 20px rgba(50, 35, 100, 0.05);
+}
+
+/* Scrollbar */
+
+.problem-panel::-webkit-scrollbar {
+  width: 7px;
+}
+
+.problem-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.problem-panel::-webkit-scrollbar-thumb {
+  background: #d8d2ec;
+  border-radius: 10px;
+}
+
+/* =================================
+   PROBLEM HEADER
+================================= */
+
+.problem-header {
+  margin-bottom: 28px;
+}
+
+.problem-header h1 {
+  margin: 12px 0 0;
+
+  color: #151b4d;
+
+  font-size: 30px;
+  line-height: 1.25;
+  font-weight: 750;
+}
+
+/* =================================
+   DIFFICULTY
+================================= */
+
+.problem-difficulty {
+  display: inline-block;
+
+  padding: 6px 13px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.problem-difficulty.easy {
+  background: #e8f8ee;
+  color: #159447;
+}
+
+.problem-difficulty.medium {
+  background: #fff3df;
+  color: #d98500;
+}
+
+.problem-difficulty.hard {
+  background: #ffe8e8;
+  color: #d43c3c;
+}
+
+/* =================================
+   PROBLEM SECTIONS
+================================= */
+
+.problem-section {
+  margin-top: 28px;
+}
+
+.problem-section h2 {
+  margin: 0 0 12px;
+
+  color: #252b57;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.problem-description {
+  margin: 0;
+
+  color: #707593;
+
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* =================================
+   EXAMPLES
+================================= */
+
+.example-card {
+  margin-bottom: 14px;
+
+  padding: 16px;
+
+  background: #f8f7fd;
+
+  border: 1px solid #ebe7f7;
+  border-radius: 12px;
+}
+
+.example-card h3 {
+  margin: 0 0 14px;
+
+  color: #30365e;
+
+  font-size: 14px;
+}
+
+.example-row {
+  margin-top: 12px;
+}
+
+.example-row strong {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #6338e8;
+
+  font-size: 12px;
+}
+
+.example-row pre {
+  margin: 0;
+
+  padding: 12px;
+
+  background: #efedf6;
+
+  border-radius: 8px;
+
+  color: #454967;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* =================================
+   CONSTRAINTS
+================================= */
+
+.constraints-box {
+  background: #f8f7fd;
+
+  border: 1px solid #ebe7f7;
+
+  border-radius: 10px;
+
+  padding: 14px;
+}
+
+.constraints-box pre {
+  margin: 0;
+
+  color: #656a88;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* =================================
+   RIGHT EDITOR PANEL
+================================= */
+
+.editor-panel {
+  height: 720px;
+
+  background: #ffffff;
+
+  border: 1px solid #e7e4f2;
+  border-radius: 18px;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 5px 20px rgba(50, 35, 100, 0.05);
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* =================================
+   EDITOR HEADER
+================================= */
+
+.editor-toolbar {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 15px;
+}
+
+.editor-toolbar h2 {
+  margin: 0 0 4px;
+
+  color: #202653;
+
+  font-size: 20px;
+}
+
+.editor-toolbar span {
+  color: #777b98;
+
+  font-size: 12px;
+}
+
+.editor-toolbar select {
+  padding: 9px 13px;
+
+  background: #ffffff;
+
+  border: 1px solid #ddd8ef;
+  border-radius: 9px;
+
+  color: #29245a;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+.editor-toolbar select:focus {
+  border-color: #6338e8;
+}
+
+/* =================================
+   MONACO EDITOR
+================================= */
+
+.monaco-container {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid #29293a;
+  border-radius: 12px;
+}
+
+/* =================================
+   EDITOR BUTTONS
+================================= */
+
+.editor-footer {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  padding: 15px 0;
+}
+
+.run-code-button,
+.submit-code-button {
+  padding: 10px 20px;
+
+  border: none;
+  border-radius: 9px;
+
+  font-size: 13px;
+  font-weight: 650;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.run-code-button {
+  background: #eee9ff;
+  color: #6338e8;
+}
+
+.run-code-button:hover {
+  background: #e2d9ff;
+}
+
+.submit-code-button {
+  background: #6338e8;
+  color: #ffffff;
+
+  box-shadow: 0 5px 12px rgba(99, 56, 232, 0.2);
+}
+
+.submit-code-button:hover {
+  background: #5128d0;
+  transform: translateY(-1px);
+}
+
+/* =================================
+   EXECUTION RESULT
+================================= */
+
+.execution-result {
+  flex: 1;
+
+  min-height: 0;
+
+  border-top: 1px solid #eceaf3;
+
+  padding-top: 14px;
+
+  overflow-y: auto;
+}
+
+.execution-result h3 {
+  margin: 0 0 6px;
+
+  color: #292e58;
+
+  font-size: 15px;
+}
+
+.execution-result p {
+  margin: 0;
+
+  color: #858298;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1000px) {
+
+  .coding-workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .problem-panel,
+  .editor-panel {
+  height: 720px;
+
+  background: #ffffff;
+
+  border: 1px solid #e7e4f2;
+  border-radius: 18px;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 5px 20px rgba(50, 35, 100, 0.05);
+
+  display: flex;
+  flex-direction: column;
+}
+  .problem-panel {
+    max-height: 700px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .coding-problem-page {
+    padding: 20px 15px 40px;
+  }
+
+  .editor-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .editor-toolbar select {
+    width: 100%;
+  }
+
+  .editor-footer {
+    justify-content: stretch;
+  }
+
+  .run-code-button,
+  .submit-code-button {
+    flex: 1;
+  }
+
+}
