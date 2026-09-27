@@ -29,11 +29,11 @@ function AdminDashboard() {
 
         const [statsResponse, usersResponse] = await Promise.all([
           axios.get(
-            'http://localhost:5000/api/admin/stats',
+            'http://https://ai-interview-platform-h3b8.onrender.com/api/admin/stats',
             config
           ),
           axios.get(
-            'http://localhost:5000/api/admin/users',
+            'http://https://ai-interview-platform-h3b8.onrender.com/api/admin/users',
             config
           ),
         ]);

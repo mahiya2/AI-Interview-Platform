@@ -26,7 +26,7 @@ const [code, setCode] = useState(
         const token = localStorage.getItem('token');
 
         const response = await axios.get(
-          `http://localhost:5000/api/coding/${id}`,
+          `http://https://ai-interview-platform-h3b8.onrender.com/api/coding/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -80,7 +80,7 @@ const [code, setCode] = useState(
     const token = localStorage.getItem('token');
 
     const response = await axios.post(
-      'http://localhost:5000/api/coding/execute',
+      'http://https://ai-interview-platform-h3b8.onrender.com/api/coding/execute',
       {
         script: code,
         language: language,
@@ -111,7 +111,7 @@ const handleSubmit = async () => {
     const token = localStorage.getItem('token');
 
     const response = await axios.post(
-      'http://localhost:5000/api/coding/submit',
+      'http://https://ai-interview-platform-h3b8.onrender.com/api/coding/submit',
       {
         questionId: id,
         script: code,

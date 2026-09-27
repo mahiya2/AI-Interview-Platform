@@ -22,7 +22,7 @@ function Dashboard() {
     const fetchDashboardData = async () => {
       try {
         const response = await axios.get(
-          'http://localhost:5000/api/interview/analytics',
+          'http://https://ai-interview-platform-h3b8.onrender.com/api/interview/analytics',
           {
             headers: {
               Authorization: `Bearer ${token}`,

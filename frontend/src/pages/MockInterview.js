@@ -37,7 +37,7 @@ function MockInterview() {
 
     try {
       const response = await axios.post(
-        'http://localhost:5000/api/interview/start',
+        'http://https://ai-interview-platform-h3b8.onrender.com/api/interview/start',
         {
           category: selectedCategory,
           stack: selectedStack,
@@ -77,7 +77,7 @@ function MockInterview() {
 
     try {
       const response = await axios.post(
-        'http://localhost:5000/api/interview/answer',
+        'http://https://ai-interview-platform-h3b8.onrender.com/api/interview/answer',
         {
           interviewId,
           answer,

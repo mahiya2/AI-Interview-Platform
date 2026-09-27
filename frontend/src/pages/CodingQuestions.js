@@ -16,7 +16,7 @@ function CodingQuestions() {
         const token = localStorage.getItem('token');
 
         const response = await axios.get(
-          'http://localhost:5000/api/coding/all',
+          'http://https://ai-interview-platform-h3b8.onrender.com/api/coding/all',
           {
             headers: {
               Authorization: `Bearer ${token}`,

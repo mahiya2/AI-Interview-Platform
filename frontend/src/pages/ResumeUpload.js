@@ -50,7 +50,7 @@ function ResumeUpload() {
       const token = localStorage.getItem('token');
 
       const response = await axios.post(
-        'http://localhost:5000/api/auth/upload-resume',
+        'http://https://ai-interview-platform-h3b8.onrender.com/api/auth/upload-resume',
         formData,
         {
           headers: {
@@ -81,7 +81,7 @@ function ResumeUpload() {
       const token = localStorage.getItem('token');
 
       const response = await axios.post(
-        'http://localhost:5000/api/auth/analyze-resume',
+        'http://https://ai-interview-platform-h3b8.onrender.com/api/auth/analyze-resume',
         {},
         {
           headers: {
