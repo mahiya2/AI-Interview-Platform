@@ -14,7 +14,7 @@ function Leaderboard() {
         const token = localStorage.getItem('token');
 
         const response = await axios.get(
-          'http://https://ai-interview-platform-h3b8.onrender.com/api/leaderboard',
+          'https://ai-interview-platform-h3b8.onrender.com/api/leaderboard',
           {
             headers: {
               Authorization: `Bearer ${token}`,

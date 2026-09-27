@@ -26,7 +26,7 @@ function AnalyticsDashboard() {
         const token = localStorage.getItem('token');
 
         const response = await axios.get(
-          'http://https://ai-interview-platform-h3b8.onrender.com/api/interview/analytics',
+          'https://ai-interview-platform-h3b8.onrender.com/api/interview/analytics',
           {
             headers: {
               Authorization: `Bearer ${token}`,

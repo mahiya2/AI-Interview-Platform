@@ -15,7 +15,7 @@ function InterviewHistory() {
         const token = localStorage.getItem('token');
 
         const response = await axios.get(
-          'http://https://ai-interview-platform-h3b8.onrender.com/api/interview/history',
+          'https://ai-interview-platform-h3b8.onrender.com/api/interview/history',
           {
             headers: {
               Authorization: `Bearer ${token}`,

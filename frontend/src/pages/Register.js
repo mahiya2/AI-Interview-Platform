@@ -18,7 +18,7 @@ function Register() {
 
     try {
       const response = await axios.post(
-        'http://https://ai-interview-platform-h3b8.onrender.com/api/auth/register',
+        'https://ai-interview-platform-h3b8.onrender.com/api/auth/register',
         {
           name,
           email,

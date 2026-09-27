@@ -19,7 +19,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        'http://https://ai-interview-platform-h3b8.onrender.com/api/auth/login',
+        'https://ai-interview-platform-h3b8.onrender.com/api/auth/login',
         {
           email,
           password,
